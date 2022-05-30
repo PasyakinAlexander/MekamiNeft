@@ -189,64 +189,68 @@ header{
         margin-top: 20px;
 
         .yandex{
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
             position: relative;
         }
 
         .yandex::before{
             content: '';
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
             background-image: url(../images/icons/yan.png);
+            background-size: contain;
             position: absolute;
             top: 0;
             left: 0;
         }
 
         .rutube{
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
             position: relative;
         }
 
         .rutube::before{
             content: '';
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
             background-image: url(../images/icons/rutube.png);
+            background-size: contain;
             position: absolute;
             top: 0;
             left: 0;
         }
 
         .telegram{
-            width: 51px;
-            height: 43px;
+            width: 40px;
+            height: 35px;
             position: relative;
         }
 
         .telegram::before{
             content: '';
-            width: 51px;
-            height: 43px;
+            width: 40px;
+            height: 35px;
             background-image: url(../images/icons/tel.png);
+            background-size: contain;
             position: absolute;
             top: 0;
             left: 0;
         }
 
         .whatsapp{
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
             position: relative;
         }
 
         .whatsapp::before{
             content: '';
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
             background-image: url(../images/icons/t.png);
+            background-size: contain;
             position: absolute;
             top: 0;
             left: 0;
@@ -299,8 +303,8 @@ header{
 
                     .img{
                         position: relative;
-                        
                         transition: 0.5s;
+                        display: flex;
 
                         img{
                             width: 100%;
@@ -312,7 +316,6 @@ header{
                             left: 20px;
                             display: flex;
                             flex-direction: column;
-                            width: 100%;
 
                             h2{
                                 margin: 0;
@@ -325,7 +328,7 @@ header{
                     }
 
                     .img::before{
-                        content: none;
+                        content: '''';
                         width: 150px;
                         height: 150px;
                         background-image: url(../images/icons/pla.png);
@@ -334,8 +337,20 @@ header{
                         top: calc(50% - 75px);
                         left: calc(50% - 75px);
                         opacity: 0;
-                        transition: 0.5s;
+                        transition: opacity 0.5s;
                         z-index: 10;
+                    }
+
+                    .img::after{
+                        content: '';
+                        background-color: rgba(0, 0, 0, 0.2);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        transition: opacity 0.5s;
+                        opacity: 0;
                     }
 
                     .subscription{
@@ -394,14 +409,11 @@ header{
                 .video:hover{
 
                     .img::before{
-                        content: '';
                         opacity: 1;
                     }
 
-                    .descr{
-                        h2{
-                            color: gray;
-                        }
+                    .img::after{
+                        opacity: 1;
                     }
                 }
             }
