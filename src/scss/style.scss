@@ -88,7 +88,7 @@ header{
             width: 30px;
             height: 10px;
             position: relative;
-            margin-left: 30px;
+            margin-left: 40px;
         }
 
         .btn-menu::before{
@@ -115,7 +115,7 @@ header{
             margin-left: 10px;
 
             a{
-                margin-left: 20px;
+                margin-left: 30px;
                 font-size: 18px;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -134,15 +134,15 @@ header{
         margin-top: 20px;
 
         .btn-search{
-            width: 40px;
-            height: 33px;
+            width: 30px;
+            height: 24px;
             position: relative;
         }
 
         .btn-search::before{
             content: '';
-            width: 40px;
-            height: 33px;
+            width: 30px;
+            height: 24px;
             background-image: url(../images/icons/poisk.png);
             background-size: contain;
             position: absolute;
@@ -173,7 +173,10 @@ header{
         }
 
         .separator{
-            content: url(../images/icons/mekami-3.png);
+            width: 10px;
+            height: 11px;
+            background-image: url(../images/icons/mekami-3.png);
+            background-size: contain;
             margin-right: 20px;
         }
 
@@ -189,15 +192,15 @@ header{
         margin-top: 20px;
 
         .yandex{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             position: relative;
         }
 
         .yandex::before{
             content: '';
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             background-image: url(../images/icons/yan.png);
             background-size: contain;
             position: absolute;
@@ -206,15 +209,15 @@ header{
         }
 
         .rutube{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             position: relative;
         }
 
         .rutube::before{
             content: '';
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             background-image: url(../images/icons/rutube.png);
             background-size: contain;
             position: absolute;
@@ -223,15 +226,15 @@ header{
         }
 
         .telegram{
-            width: 35px;
-            height: 30px;
+            width: 30px;
+            height: 25px;
             position: relative;
         }
 
         .telegram::before{
             content: '';
-            width: 35px;
-            height: 30px;
+            width: 30px;
+            height: 25px;
             background-image: url(../images/icons/tel.png);
             background-size: contain;
             position: absolute;
@@ -240,15 +243,15 @@ header{
         }
 
         .whatsapp{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             position: relative;
         }
 
         .whatsapp::before{
             content: '';
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             background-image: url(../images/icons/t.png);
             background-size: contain;
             position: absolute;
