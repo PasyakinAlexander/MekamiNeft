@@ -3,6 +3,7 @@ body
     margin: 0;
     color: #000;
     background: #fff;
+    font-family: calibri;
 }
 
 body.lock
@@ -25,11 +26,399 @@ a
 button, input, select
 {
     outline: none;
+    font-family: calibri;
 }
 
-button, a
+button, a, .btn
 {
     cursor: pointer;
+}
+
+header{
+    padding-top: 50px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top{
+        justify-content: end;
+
+        .fonts{
+            display: flex;
+            align-items: flex-end;
+
+            .small{
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            .middle{
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            .big{
+                font-size: 26px;
+                line-height: 26px;
+            }
+
+            .btn{
+                margin-left: 5px;
+            }
+
+            .btn.active{
+                color:#C92123;
+            }
+        }
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .logo{
+            width: 300px;
+        }
+
+        .btn-menu{
+            width: 50px;
+            height: 20px;
+            position: relative;
+            margin-left: 30px;
+        }
+
+        .btn-menu::before{
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #272524;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .btn-menu::after{
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #272524;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .menu{
+            margin-left: 10px;
+
+            a{
+                margin-left: 20px;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            a.active{
+                color: #C92123;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .options{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .btn-search{
+            width: 40px;
+            height: 33px;
+            position: relative;
+        }
+
+        .btn-search::before{
+            content: '';
+            width: 40px;
+            height: 33px;
+            background-image: url(../images/icons/poisk.png);
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        select{
+            padding-right: 20px;
+            border: none;
+            font-weight: 700;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .bread-crumbs{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+
+        a{
+            font-weight: 16px;
+            color: #C92123;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-right: 20px;
+        }
+
+        .separator{
+            content: url(../images/icons/mekami-3.png);
+            margin-right: 20px;
+        }
+
+        a.active{
+            text-transform: none;
+            color: #D7B27F;
+        }
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .yandex{
+            width: 43px;
+            height: 43px;
+            position: relative;
+        }
+
+        .yandex::before{
+            content: '';
+            width: 43px;
+            height: 43px;
+            background-image: url(../images/icons/yan.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .rutube{
+            width: 43px;
+            height: 43px;
+            position: relative;
+        }
+
+        .rutube::before{
+            content: '';
+            width: 43px;
+            height: 43px;
+            background-image: url(../images/icons/rutube.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .telegram{
+            width: 51px;
+            height: 43px;
+            position: relative;
+        }
+
+        .telegram::before{
+            content: '';
+            width: 51px;
+            height: 43px;
+            background-image: url(../images/icons/tel.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .whatsapp{
+            width: 43px;
+            height: 43px;
+            position: relative;
+        }
+
+        .whatsapp::before{
+            content: '';
+            width: 43px;
+            height: 43px;
+            background-image: url(../images/icons/t.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        a{
+            margin-left: 20px;
+        }
+    }
+}
+
+.videogallary{
+    margin-top: 50px;
+
+    h1{
+        font-size: 54px;
+        color:#C92123;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .btn__switch__wrapper{
+        margin-top: 30px;
+
+        .btn__tab__switch{
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 1px solid #D7B27F;
+            color: #D7B27F;
+            background: none;
+            margin-right: 10px;
+        }
+    }
+
+    .tab__viewer{
+        margin-top: 30px;
+
+        .tab{
+            .videos{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .video{
+                    width: 30%;
+                    position: relative;
+                    padding-bottom: 5px;
+                    border-bottom: 3px solid #C92123;
+                    margin-bottom: 20px;
+
+                    .img{
+                        position: relative;
+                        
+                        transition: 0.5s;
+
+                        img{
+                            width: 100%;
+                        }
+    
+                        .descr{
+                            position: absolute;
+                            bottom: 20px;
+                            left: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+
+                            h2{
+                                margin: 0;
+                                color: white;
+                                font-weight: 700;
+                                font-size: 24px;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+
+                    .img::before{
+                        content: none;
+                        width: 150px;
+                        height: 150px;
+                        background-image: url(../images/icons/pla.png);
+                        background-size: contain;
+                        position: absolute;
+                        top: calc(50% - 75px);
+                        left: calc(50% - 75px);
+                        opacity: 0;
+                        transition: 0.5s;
+                        z-index: 10;
+                    }
+
+                    .subscription{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        h2{
+                            margin: 0;
+                            color: #C92123;
+                            font-weight: 700;
+                            font-size: 24px;
+                        }
+                    }
+
+                    .info{
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+
+                        .likes, .views{
+                            color:#D7B27F;
+                            font-size: 14px;
+                            margin-left: 15px;
+                            position: relative;
+                            padding-left: 30px;
+
+                        }
+
+                        .likes::before{
+                            content: '';
+                            width: 21px;
+                            height: 22px;
+                            background-image: url(../images/icons/mekami-4.png);
+                            position: absolute;
+                            top: calc(50% - 11px);
+                            left: 0;
+                        }
+
+                        .views{
+                            padding-left: 40px;
+                        }
+
+                        .views::before{
+                            content: '';
+                            width: 35px;
+                            height: 22px;
+                            background-image: url(../images/icons/mekami-5.png);
+                            position: absolute;
+                            top: calc(50% - 11px);
+                            left: 0;
+                        }
+                    }
+                }
+
+                .video:hover{
+
+                    .img::before{
+                        content: '';
+                        opacity: 1;
+                    }
+
+                    .descr{
+                        h2{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        iframe{
+            display: none;
+        }
+    }
+
+    .modal.active{
+        iframe{
+            display: block;
+        }
+    }
 }
 
 

@@ -94,5 +94,6 @@ function HideModal(modalId)
         $(modalId).removeClass('active');
         $(modalId + ' .modal__dialog').removeClass('fadeOutDownBig');
         $('.modal__backdrop').remove();
+        $('iframe').attr('src', $('iframe').attr('src'));
     });
 }
