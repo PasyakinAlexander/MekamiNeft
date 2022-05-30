@@ -81,20 +81,20 @@ header{
         margin-top: 20px;
 
         .logo{
-            width: 300px;
+            width: 150px;
         }
 
         .btn-menu{
-            width: 50px;
-            height: 20px;
+            width: 30px;
+            height: 10px;
             position: relative;
             margin-left: 30px;
         }
 
         .btn-menu::before{
             content: '';
-            width: 50px;
-            height: 5px;
+            width: 30px;
+            height: 3px;
             background-color: #272524;
             position: absolute;
             top: 0;
@@ -103,8 +103,8 @@ header{
 
         .btn-menu::after{
             content: '';
-            width: 50px;
-            height: 5px;
+            width: 30px;
+            height: 3px;
             background-color: #272524;
             position: absolute;
             bottom: 0;
