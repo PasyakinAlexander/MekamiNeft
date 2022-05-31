@@ -4,6 +4,8 @@ function Core()
 {
     SetTabSwitcher();
     SetModal();
+    ShowMenu();
+    CloseMenu();
 }
 
 function SetTabSwitcher()
@@ -96,4 +98,27 @@ function HideModal(modalId)
         $('.modal__backdrop').remove();
         $('iframe').attr('src', $('iframe').attr('src'));
     });
+}
+
+function ShowMenu()
+{
+    $('.btn-menu').on('click', function(e) {
+        e.preventDefault();
+        if ($('.menu').hasClass('active'))
+        {
+            return;
+        }
+        $('.menu').addClass('active');
+    })
+}
+
+function CloseMenu()
+{
+    $('.btn-close-menu').on('click', function(e) {
+        e.preventDefault();
+        if ($('.menu').hasClass('active'))
+        {
+            $('.menu').removeClass('active');
+        }
+    })
 }

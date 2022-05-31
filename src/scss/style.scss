@@ -125,6 +125,32 @@ header{
                 color: #C92123;
                 text-decoration: underline;
             }
+
+            .btn-close-menu{
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+        
+            .btn-close-menu::before{
+                content: '';
+                width: 20px;
+                height: 2px;
+                background: white;
+                transform: rotate(45deg);
+                position: absolute;
+            }
+        
+            .btn-close-menu::after{
+                content: '';
+                width: 20px;
+                height: 2px;
+                background: white;
+                transform: rotate(-45deg);
+                position: absolute;
+            }
         }
     }
 
