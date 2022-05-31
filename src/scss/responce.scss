@@ -127,6 +127,14 @@
                 }
             }
         }
+
+        .btn__switch__wrapper{
+            justify-content: flex-start;
+
+            .btn__tab__switch{
+                margin-right: 20px;
+            }
+        }
     }
 }
 
@@ -155,6 +163,12 @@
                 left: -100vw;
             }
         }
+
+        .social{
+            .yandex{
+                margin-left: 0;
+            }
+        }
     }
 
     .videogallary{
@@ -170,6 +184,16 @@
                         width: 100%;
                     }
                 }
+            }
+        }
+
+        .btn__switch__wrapper{
+            flex-direction: column;
+            align-items: center;
+
+            .btn__tab__switch{
+                margin-right: 0;
+                width: fit-content;
             }
         }
     }
